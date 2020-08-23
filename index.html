@@ -14,32 +14,86 @@
         <div class="row m-1">
             <div class="jumbotron m-0">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <div class="card">
                             <img src="https://avatars1.githubusercontent.com/u/25843830?s=460&u=9c3ba0de9ee840c10fd6eff82ef9219db796c1c8&v=4"
                                 class="card-img-top" alt="Personal picture">
                             <div class="card-body">
-                                <h5 class="card-title">Sobre mi</h5>
+                                <h5 class="card-title" id="about-me"></h5>
                                 <p class="card-text" id="about"></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm m-2">
-                        <h1 class="display-4">Efrén Boyarizo</h1>
-                        <p class="lead">Estudiante y freelancer a tiempo parcial.</p>
-                        <hr class="my-4">
-                        <div class="card">
+                    <div class="col-md">
+                        <h1 class="display-4 m-2">Efrén Boyarizo</h1>
+                        <p class="lead m-2" id="subtitle"></p>
+                        <hr class="my-3">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled">Formación:</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="nav-upm-tab" data-toggle="tab" href="#nav-upm"
+                                            role="tab" aria-controls="nav-upm" aria-selected="true">2018 - </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="nav-highschool-tab" data-toggle="tab"
+                                            href="#nav-highschool" role="tab" aria-controls="nav-highschool"
+                                            aria-selected="false">2016 - 2018</a>
+                                    </li>
+                                </ul>
+                            </div>
                             <div class="card-body">
-                                <h5 class="card-title">Formación</h5>
-                                <div class="row">
-                                    <dl>
-                                        <dt>Bachillerato</dt>
-                                        <dd id="highschool"></dd>
-                                        <dt>UPM</dt>
-                                        <dd id="upm"></dd>
-                                    </dl>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-upm" role="tabpanel"
+                                        aria-labelledby="nav-home-tab">
+                                        <h5 class="card-title">Estudios superiores:</h5>
+                                        <div class="text-center">
+                                            <img src="https://pbs.twimg.com/profile_images/880468291751489537/Ez16RZZw_400x400.jpg"
+                                                class="rounded" height="120">
+                                        </div>
+                                        <p class="card-text" id="upm"></p>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-highschool" role="tabpanel"
+                                        aria-labelledby="nav-profile-tab">
+                                        <h5 class="card-title">Bachillerato:</h5>
+                                        <div class="text-center">
+                                            <img src="https://www.educa2.madrid.org/web/educamadrid/principal/files/05f3411c-3021-40f0-b99e-a444c2b419d3/logoburgo.png?largeSize=true"
+                                                class="rounded mt-2 mb-4" height="80">
+                                        </div>
+                                        <p class="card-text" id="highschool"></p>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="card mt-2">
+                            <div class="card-body d-flex justify-content-around">
+                                <a href="mailto:efren@boyarizo.es" target="_blank" class="badge badge-dark"><i
+                                        data-feather="mail"></i></a>
+                                <a href="https://github.com/efrenbg1" target="_blank" class="badge badge-secondary"><i
+                                        data-feather="github"></i></a>
+                                <a href="http://www.linkedin.com/in/efrenbg1" target="_blank"
+                                    class="badge badge-primary"><i data-feather="linkedin"></i></a>
+                                <a href="https://www.youtube.com/channel/UCUwkmZsbRW7l5WkTwL1G9lA" target="_blank"
+                                    class="badge badge-danger"><i data-feather="youtube"></i></a>
+                                <a href="https://www.kickstarter.com/projects/1119444446/lemonsw-a-pc-power-button-with-superpowers?ref=project_link"
+                                    target="_blank" class="badge badge-success"><img src="img/kickstarter.svg"
+                                        width="24" height="24"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card mt-3 mx-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
                         </div>
                     </div>
                 </div>
@@ -49,6 +103,7 @@
 
 
 </body>
+<script src="https://unpkg.com/feather-icons"></script>
 <script src="index.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
